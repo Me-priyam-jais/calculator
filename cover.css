@@ -1,0 +1,67 @@
+body
+{
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+height:90vh;
+}
+#cover
+{
+position: relative;
+height:80vh;
+background-color: #2e3131;
+width:40vh;
+border-radius:0.8em;
+}
+#coverheading
+{
+margin-top:25vh;
+}
+.dots
+{
+background-color: aqua;
+height:10px;
+width:10px;
+display:inline-block;
+border-radius:100%;
+background: radial-gradient(circle at 30% 30%, #333, #000);
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 20px rgba(58, 57, 57, 0.5),
+                inset 10px 10px 20px rgba(20, 20, 20, 0.2),
+                0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: perspective(10000px) rotateX(360deg) rotateY(360deg);
+    transition: transform 2s;
+}
+.dots:hover {
+    transform: perspective(1000px) rotateX(360deg) rotateY(360deg);
+    transition: 2s;
+}
+#dot1
+{
+position:absolute;
+top:0;
+left:0;
+margin-top:10px;
+margin-left:10px;
+}
+#dot2
+{
+position:absolute;
+top:10px;
+right:10px;
+}
+#dot3
+{
+position:absolute;
+bottom:10px;
+left:10px;
+margin-top:40vh;
+}
+#dot4
+{
+position:absolute;
+bottom:10px;
+right:10px;
+margin-top:40vh;
+}
